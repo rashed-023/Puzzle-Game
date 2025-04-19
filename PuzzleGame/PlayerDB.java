@@ -4,7 +4,7 @@ import java.sql.*;
 public class PlayerDB {
     private static final String URL = "jdbc:mysql://localhost:3306/puzzlegame";
     private static final String USER = "root";
-    private static final String PASSWORD = ""; // Add your XAMPP MySQL password if any
+    private static final String PASSWORD = "";
 
     public static void initializePlayer(String playerName) {
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)) {
